@@ -16,18 +16,12 @@ namespace Client
         public MainForm()
         {
             InitializeComponent();
-            Test();
-        }
-
-        private void Test()
-        {
-            Core.LoadFile(@"../../../file.xml");
-            BeginTest();
         }
 
         private void відкритиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog d = new OpenFileDialog();
+            d.Filter = "XML Expert file| *.xml";
             if (d.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 Core.LoadFile(d.FileName);
@@ -44,6 +38,7 @@ namespace Client
         private void ShowQuestion()
         {
             buttonBack.Enabled = (Selected.Parent != null);
+            button1.Visible = (Selected.Children.Count == 0);
             textBox1.Text = Selected.Text;
             listBox1.Visible = (Selected.Children.Count != 0);
             listBox1.Items.Clear();
@@ -55,6 +50,7 @@ namespace Client
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBox1.SelectedIndex < 0) return;
             Selected = Selected.Children[listBox1.SelectedIndex];
             ShowQuestion();
         }
@@ -63,6 +59,11 @@ namespace Client
         {
             Selected = Selected.Parent;
             ShowQuestion();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

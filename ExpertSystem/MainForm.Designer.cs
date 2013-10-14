@@ -38,25 +38,28 @@
             this.додатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видалитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.довідкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.treeView = new System.Windows.Forms.TreeView();
-            this.listBox = new System.Windows.Forms.ListBox();
-            this.panel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxText = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.випрвитиВибранийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel = new System.Windows.Forms.Panel();
+            this.textBoxText = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxTitle = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listBox = new System.Windows.Forms.ListBox();
+            this.treeView = new System.Windows.Forms.TreeView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -87,6 +90,7 @@
             this.новийToolStripMenuItem.Name = "новийToolStripMenuItem";
             this.новийToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.новийToolStripMenuItem.Text = "Новий";
+            this.новийToolStripMenuItem.Click += new System.EventHandler(this.новийToolStripMenuItem_Click);
             // 
             // відкритиToolStripMenuItem
             // 
@@ -107,12 +111,14 @@
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
             this.вихідToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
             // правкаToolStripMenuItem
             // 
             this.правкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.додатиToolStripMenuItem,
-            this.видалитиToolStripMenuItem});
+            this.видалитиToolStripMenuItem,
+            this.випрвитиВибранийToolStripMenuItem});
             this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
             this.правкаToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.правкаToolStripMenuItem.Text = "Правка";
@@ -120,34 +126,44 @@
             // додатиToolStripMenuItem
             // 
             this.додатиToolStripMenuItem.Name = "додатиToolStripMenuItem";
-            this.додатиToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.додатиToolStripMenuItem.Text = "Додати";
+            this.додатиToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
+            this.додатиToolStripMenuItem.Text = "Додати варіант до вибраного";
+            this.додатиToolStripMenuItem.Click += new System.EventHandler(this.додатиToolStripMenuItem_Click);
             // 
             // видалитиToolStripMenuItem
             // 
             this.видалитиToolStripMenuItem.Name = "видалитиToolStripMenuItem";
-            this.видалитиToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.видалитиToolStripMenuItem.Text = "Видалити";
+            this.видалитиToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
+            this.видалитиToolStripMenuItem.Text = "Видалити вибраний (з підлеглими)";
             // 
             // довідкаToolStripMenuItem
             // 
             this.довідкаToolStripMenuItem.Name = "довідкаToolStripMenuItem";
             this.довідкаToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.довідкаToolStripMenuItem.Text = "Довідка";
+            this.довідкаToolStripMenuItem.Click += new System.EventHandler(this.довідкаToolStripMenuItem_Click);
             // 
-            // tabControl1
+            // випрвитиВибранийToolStripMenuItem
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(527, 309);
-            this.tabControl1.TabIndex = 2;
+            this.випрвитиВибранийToolStripMenuItem.Name = "випрвитиВибранийToolStripMenuItem";
+            this.випрвитиВибранийToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
+            this.випрвитиВибранийToolStripMenuItem.Text = "Випрвити вибраний";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(519, 283);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Налаштування";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
@@ -162,25 +178,66 @@
             this.tabPage1.Text = "Запитання";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // panel
             // 
-            this.button3.Location = new System.Drawing.Point(249, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Виправити";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panel.Controls.Add(this.label2);
+            this.panel.Controls.Add(this.textBoxTitle);
+            this.panel.Controls.Add(this.label1);
+            this.panel.Controls.Add(this.textBoxText);
+            this.panel.Location = new System.Drawing.Point(375, 6);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(136, 212);
+            this.panel.TabIndex = 0;
             // 
-            // button2
+            // textBoxText
             // 
-            this.button2.Location = new System.Drawing.Point(249, 136);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Видалити";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.textBoxText.Location = new System.Drawing.Point(3, 22);
+            this.textBoxText.Multiline = true;
+            this.textBoxText.Name = "textBoxText";
+            this.textBoxText.Size = new System.Drawing.Size(130, 47);
+            this.textBoxText.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Вміст";
+            // 
+            // textBoxTitle
+            // 
+            this.textBoxTitle.Location = new System.Drawing.Point(3, 88);
+            this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.Size = new System.Drawing.Size(131, 20);
+            this.textBoxTitle.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Підпис";
+            // 
+            // listBox
+            // 
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Location = new System.Drawing.Point(249, 32);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(120, 69);
+            this.listBox.TabIndex = 1;
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
+            // 
+            // treeView
+            // 
+            this.treeView.Location = new System.Drawing.Point(9, 7);
+            this.treeView.Name = "treeView";
+            this.treeView.Size = new System.Drawing.Size(234, 211);
+            this.treeView.TabIndex = 2;
+            this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
             // 
             // button1
             // 
@@ -192,100 +249,63 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // treeView
+            // button2
             // 
-            this.treeView.Location = new System.Drawing.Point(9, 7);
-            this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(234, 211);
-            this.treeView.TabIndex = 2;
-            this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
-            this.treeView.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_NodeMouseDoubleClick);
+            this.button2.Location = new System.Drawing.Point(249, 136);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Видалити";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // listBox
+            // button3
             // 
-            this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(249, 6);
-            this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(120, 95);
-            this.listBox.TabIndex = 1;
+            this.button3.Location = new System.Drawing.Point(249, 165);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Виправити";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel
+            // button4
             // 
-            this.panel.Controls.Add(this.label2);
-            this.panel.Controls.Add(this.textBoxTitle);
-            this.panel.Controls.Add(this.label1);
-            this.panel.Controls.Add(this.textBoxText);
-            this.panel.Controls.Add(this.radioButton2);
-            this.panel.Controls.Add(this.radioButton1);
-            this.panel.Location = new System.Drawing.Point(375, 6);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(136, 212);
-            this.panel.TabIndex = 0;
+            this.button4.Location = new System.Drawing.Point(294, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Вгору";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label2
+            // tabControl1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Підпис";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 24);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(527, 309);
+            this.tabControl1.TabIndex = 2;
             // 
-            // textBoxTitle
+            // textBox1
             // 
-            this.textBoxTitle.Location = new System.Drawing.Point(2, 132);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(131, 20);
-            this.textBoxTitle.TabIndex = 4;
+            this.textBox1.Location = new System.Drawing.Point(86, 9);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Вміст";
-            // 
-            // textBoxText
-            // 
-            this.textBoxText.Location = new System.Drawing.Point(2, 66);
-            this.textBoxText.Multiline = true;
-            this.textBoxText.Name = "textBoxText";
-            this.textBoxText.Size = new System.Drawing.Size(130, 47);
-            this.textBoxText.TabIndex = 2;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(4, 27);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(97, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Повідомлення";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(4, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(79, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Запитання";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(519, 283);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Налаштування";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Автор файлу";
             // 
             // MainForm
             // 
@@ -298,10 +318,12 @@
             this.Text = "Editor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,20 +333,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TreeView treeView;
-        private System.Windows.Forms.ListBox listBox;
-        private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxText;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.ToolStripMenuItem новийToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem відкритиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem зберегтиToolStripMenuItem;
@@ -333,7 +341,23 @@
         private System.Windows.Forms.ToolStripMenuItem додатиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem видалитиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem довідкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem випрвитиВибранийToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxTitle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxText;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
 

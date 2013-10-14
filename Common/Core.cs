@@ -12,8 +12,9 @@ namespace ExpertSystem
     {
         static int id = 0;
         static public int NextID { get{ return Core.id++;}}
-        static Question Root;
+        public static Question Root;
         static XmlDocument doc = new XmlDocument();
+
         static XmlNode XmlRoot
         {
             get { return Core.doc.GetElementsByTagName("tree")[0]; }
@@ -78,6 +79,32 @@ namespace ExpertSystem
         public static Question GetSelected(int id)
         {
             return Core.Root.GetSelected(id);
+        }
+        public static MyTreeNode GetSelectedNode(int id, TreeNodeCollection children)
+        {
+            foreach (TreeNode item in children)
+            {
+                MyTreeNode node = item as MyTreeNode;
+                if (node.ID == id) return node;
+                MyTreeNode result = GetSelectedNode(id, node.Nodes);
+                if ( result != null)
+                {
+                    return result;
+                }
+            }
+            return null;
+        }
+
+        public static string Author 
+        {
+            get
+            {
+                return Core.doc.GetElementsByTagName("info")[0].Attributes["author"].Value;
+            }
+            set
+            {
+                Core.doc.GetElementsByTagName("info")[0].Attributes["author"].Value = value;
+            }
         }
     }
 }

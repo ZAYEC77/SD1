@@ -9,12 +9,14 @@ namespace ExpertSystem
 {
     public class Question
     {
-        int ID { get; set; }
+        public int ID { get; set; }
         public String Title { get; set; }
         public String Text { get; set; }
         public List<Question> Children = new List<Question>();
         public Question()
         {
+            Text = "";
+            Title = "";
         }
         public void AddChild(Question q)
         {

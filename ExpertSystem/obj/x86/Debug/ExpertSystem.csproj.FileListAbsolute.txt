@@ -1,0 +1,6 @@
+D:\Study\SoftwareDesign\Labs\ExpertSystem\bin\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\ExpertSystem\bin\Debug\ExpertSystem.pdb
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.Properties.Resources.resources
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.csproj.GenerateResource.Cache
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.pdb

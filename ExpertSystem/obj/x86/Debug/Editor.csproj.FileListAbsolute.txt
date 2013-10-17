@@ -1,0 +1,28 @@
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.pdb
+D:\Study\SoftwareDesign\Labs\ExpertSystem\bin\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\ExpertSystem\bin\Debug\ExpertSystem.pdb
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.Form1.resources
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\ExpertSystem.Properties.Resources.resources
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\Editor.csproj.GenerateResource.Cache
+D:\Study\SoftwareDesign\Labs\ExpertSystem\obj\x86\Debug\Editor.csprojResolveAssemblyReference.cache
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\ExpertSystem.pdb
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\Common1.dll
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\Common1.pdb
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\Editor.csprojResolveAssemblyReference.cache
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.MainForm.resources
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.Properties.Resources.resources
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\Editor.csproj.GenerateResource.Cache
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.exe
+D:\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.pdb
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.exe
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.pdb
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\ExpertSystem.exe
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\ExpertSystem.pdb
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\Common1.dll
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\bin\Debug\Common1.pdb
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\Editor.csprojResolveAssemblyReference.cache
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.MainForm.resources
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\ExpertSystem.Properties.Resources.resources
+F:\Хлам 0\Study\SoftwareDesign\Labs\Lab1\ExpertSystem\obj\x86\Debug\Editor.csproj.GenerateResource.Cache

@@ -1,0 +1,51 @@
+<document>
+  <info author="Dmytro Karpovych" />
+  <tree>
+    <element title="" text="Живлення присутнє?">
+      <element title="Так" text="Монітор працює?">
+        <element title="Ні" text="Перевірте відеокарту" />
+        <element title="Так" text="Нова збірка?">
+          <element title="Так" text="Перевірте вимоги системи по живленню" />
+          <element title="Ні" text="Завантаження з другої строби?">
+            <element title="Так" text="Спробувати інший БЖ і сигнал power_on" />
+            <element title="Ні" text="Є звукові сигнали?">
+              <element title="Так" text="Перевірте працездатність материнської плати" />
+              <element title="Ні" text="Нове обладнання встановлено?">
+                <element title="Так" text="Видаліть останнє встановлене обладнання. перевірте живлення" />
+                <element title="Ні" text="Зверніться до спеціаліста" />
+              </element>
+            </element>
+          </element>
+        </element>
+      </element>
+      <element title="Ні" text="Блок живлення працює?">
+        <element title="Ні" text="Замініть блок живлення" />
+        <element title="Так" text="Перемикач 220/110 встановлений правильно?">
+          <element title="Ні" text="Виберіть правильний тип живення" />
+          <element title="Так" text="Материнська плата працездатна?">
+            <element title="Ні" text="Перевірте підключення передньої паналі до материнської плати, звіртесь з інструкцією" />
+            <element title="Так" text="Кнопка ввімкнення працює?">
+              <element title="Так" text="Перевірити підключення до передньої панелі чи змінити з кнопкою reset" />
+              <element title="Ні" text="Блок живлення підключений до материнської плати?">
+                <element title="Ні" text="Перевірити конектори блоку живлення та материнської плати" />
+                <element title="Так" text="HDD вмикається?">
+                  <element title="Так" text="Є наявні несправні модулі?">
+                    <element title="Так" text="Видаліть з материнської плати всі модулі крім CPU, RAM і відеокарти" />
+                    <element title="Ні" text="Материнська плата отримує живлення?">
+                      <element title="Так" text="Перевірити на наявність короткого замикання за рахунок сміщення чи порушення геометрії плати. Перевірити встановлення відеокарти" />
+                      <element title="Ні" text="Замініть блок живлення" />
+                    </element>
+                  </element>
+                  <element title="Ні" text="HDD підключений вірно?">
+                    <element title="Ні" text="перевірте HDD" />
+                    <element title="Так" text="Несправний блок живлення чи конектор" />
+                  </element>
+                </element>
+              </element>
+            </element>
+          </element>
+        </element>
+      </element>
+    </element>
+  </tree>
+</document>

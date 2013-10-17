@@ -145,7 +145,8 @@ namespace ExpertSystem
 
         private void довідкаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Модуль експертної системи:\n\"Діагностика персонального копм'ютера\"");
+            Core.OpenHelp();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

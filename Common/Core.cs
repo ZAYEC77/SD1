@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Xml;
+using System.IO;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ExpertSystem
 {
@@ -105,6 +107,13 @@ namespace ExpertSystem
             {
                 Core.doc.GetElementsByTagName("info")[0].Attributes["author"].Value = value;
             }
+        }
+
+        public static void OpenHelp()
+        {
+            Process p = new Process();
+            p.StartInfo.FileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\help.chm";
+            p.Start();
         }
     }
 }

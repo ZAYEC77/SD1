@@ -65,5 +65,10 @@ namespace Client
         {
             this.Close();
         }
+
+        private void довідкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Core.OpenHelp();
+        }
     }
 }

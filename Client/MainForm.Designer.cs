@@ -35,6 +35,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.buttonBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.довідкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
+            this.файлToolStripMenuItem,
+            this.довідкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(403, 24);
@@ -70,7 +72,7 @@
             // відкритиToolStripMenuItem
             // 
             this.відкритиToolStripMenuItem.Name = "відкритиToolStripMenuItem";
-            this.відкритиToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.відкритиToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.відкритиToolStripMenuItem.Text = "Відкрити";
             this.відкритиToolStripMenuItem.Click += new System.EventHandler(this.відкритиToolStripMenuItem_Click);
             // 
@@ -108,6 +110,13 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // довідкаToolStripMenuItem
+            // 
+            this.довідкаToolStripMenuItem.Name = "довідкаToolStripMenuItem";
+            this.довідкаToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.довідкаToolStripMenuItem.Text = "Довідка";
+            this.довідкаToolStripMenuItem.Click += new System.EventHandler(this.довідкаToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +146,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem довідкаToolStripMenuItem;
     }
 }
 
